@@ -8,7 +8,7 @@ int main() {
     
     char runnning = 1;
     while(runnning){
-        if(InputKeyboard_Get(&kbi,INPUTKEYBOARD_KEY_Q).PRESSED)
+        if(InputKeyboard_Get(&kbi,ALX_KEY_Q).PRESSED)
             runnning = 0;
 
         InputKeyboard_Update(&kbi);
@@ -25,7 +25,7 @@ int main() {
 
     InputMouse mi = InputMouse_New(0,0);
     while(runnning){
-        if(InputMouse_Get(&mi,INPUTMOUSE_BUTTON_L).PRESSED)
+        if(InputMouse_Get(&mi,ALX_MOUSE_L).PRESSED)
             runnning = 0;
         
         InputMouse_Update(&mi);
